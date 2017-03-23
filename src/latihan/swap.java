@@ -18,7 +18,10 @@ public class swap {
             a1 = a / 100;
             if (a1 == 1) {
                 b = " seratus";
-            } else {
+            } else if (a1 == 0) {
+                b = "";
+            }
+            else{
                 b = satuan(a1) + " ratus";
             }
             a1 = a / 10;
