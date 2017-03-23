@@ -1,10 +1,7 @@
 package latihan;
-
 public class swap {
-
     public int angka;
     public String huruf;
-
     public void ubah(int a) {
         String b = "", c = "", d = "", e = "";
         int a1, a2, a3;
@@ -43,11 +40,9 @@ public class swap {
                     c = satuan(a2)+" puluh";
                     d = satuan(a3);
             }
-
         System.out.println("Hasil = " + b + " " + c + " " + d);
         }
     }
-
     public String satuan(int b) {
         String c = "";
         if (b == 9) {
@@ -73,7 +68,6 @@ public class swap {
         }
         return c;
     }
-
     public void ubah(String a) {
         int pindah = 0;
         int bil = 0;
@@ -104,7 +98,6 @@ public class swap {
         }
         System.out.println("Hasilnya = " + bil);
     }
-
     public int konv(String a) {
         int b = 0;
         if (a.equalsIgnoreCase(null + "satu")) {
@@ -134,7 +127,6 @@ public class swap {
         }
         return b;
     }
-
     public int hitungSpasi(String a) {
         int x = 0;
         for (int i = 0; i < a.length(); i++) {
