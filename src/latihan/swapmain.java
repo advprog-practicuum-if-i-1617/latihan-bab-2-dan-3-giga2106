@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class swapmain {
     public static void main(String[] args) {
         swap bil = new swap();
-        bil.ubah(19);
-        bil.ubah("sembilan belas");
+        bil.ubah(209);
+        bil.ubah("seratus lima belas");
     }
 }
