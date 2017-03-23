@@ -17,6 +17,11 @@ public class swap {
                 e = " Sepuluh";
             }
             System.out.println("Hasil : " + e);
+        }
+        else if (a>11 && a<20) {
+            int t = a%10;
+            e = satuan(t) + " belas";
+            System.out.println("Hasil : " + e);
         } else {
             a1 = a / 100;
             if (a1 == 1) {
@@ -73,18 +78,17 @@ public class swap {
             if (a.charAt(i) == ' ') {
                 pindah++;
             } else {
-
                 l[pindah] += a.charAt(i);
             }
         }
         for (int i = 0; i < x; i++) {
             if (l[i].equalsIgnoreCase(null+"ratus")) {
                 bil += (100*konv(l[i-1]))-konv(l[i-1]);
-            }
-            if (l[i].equalsIgnoreCase(null+"puluh")) {
+            }if (l[i].equalsIgnoreCase(null+"puluh")) {
                 bil += (10*konv(l[i-1]))-konv(l[i-1]);
-                
-            } if (l[i].equalsIgnoreCase(null+"seribu")) {
+            }if (l[i].equalsIgnoreCase(null+"belas")) {
+                bil += 10;
+            }if (l[i].equalsIgnoreCase(null+"seribu")) {
                 bil = 1000;
             } else {
                 bil += konv(l[i]);
