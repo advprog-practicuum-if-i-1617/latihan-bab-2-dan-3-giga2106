@@ -5,12 +5,15 @@ public class swap {
     public void ubah(int a) {
         String b = "", c = "", d = "a", e = "";
         int a1, a2;
-        if (a == 1000 || a == 100 || a == 10 || a == 0) {
+        if (a == 1000 || a == 100 ||a==11|| a == 10 || a == 0) {
             if (a == 1000) {
                 e = " Seribu";
             } else if (a == 100) {
-                e = " Seratus";
-            } else if (a == 10) {
+                e = " Seratus";}
+            else if (a==11){
+                e = "Sebelas";
+            }
+             else if (a == 10) {
                 e = " Sepuluh";
             }
             System.out.println("Hasil : " + e);
@@ -113,6 +116,9 @@ public class swap {
             b = 10;
         } else if (a.equalsIgnoreCase(null + "seratus")) {
             b = 100;
+        }
+        else if (a.equalsIgnoreCase(null + "sebelas")) {
+            b = 11;
         }
         return b;
     }
